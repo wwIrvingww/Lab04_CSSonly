@@ -1,0 +1,65 @@
+@import url("https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap");
+
+html {
+  --bg: #dca;
+  --skyblue: #1FE0FF;
+  background: var(--skyblue);
+}
+
+div {
+  --color: #444;
+  --colordark: #333;
+  --colorlight: #666;
+  --bgdark: #0003;
+  --bglight: #fff2;
+  --colorblack: #211A23;
+  width: 80vmin;
+  height: 50vmin;
+  border-radius: 2vmin 2vmin 1vmin 1vmin / 1.5vmin 1.5vmin 2vmin 2vmin;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  overflow: hidden;
+  background-color: var(--colorblack);
+  
+}
+
+div::before {
+  content: "";
+  box-sizing: border-box;
+  display: block;
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translate(-50%, -12vmin);
+  width: 55vmin;
+  height: 30vmin;
+  border-radius: 5% / 50%;
+  background-color: #232323;
+
+}
+
+div::after {
+  content: "Congratulations-Mc";
+  color: red;
+  display: block;
+  position: absolute;
+  left: 5vmin;
+  top: 5vmin;
+  width: 70vmin;
+  height: 30vmin;
+  border-radius: 2vmin;
+  background:
+    linear-gradient(black 4%, transparent 0 96%, black 0) 10vmin 3.5vmin /
+      55vmin 4vmin,
+    linear-gradient(var(--color), var(--color)) 12vmin 11vmin / 46vmin 13vmin;
+  background-repeat: no-repeat;
+  background-color: white;
+  box-sizing: border-box;
+
+  font-family: "Architects Daughter", Arial, sans-serif;
+  font-weight: bold;
+  font-size: 5vmin;
+  padding: 2.25vmin 0 2.75vmin 12vmin;
+}
